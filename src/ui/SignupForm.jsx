@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 import Input from "../ui/Input";
-import { signUpApi } from "../auth/signup";
 import Label from "../ui/Label";
 import toast from "react-hot-toast";
+import { signUpApi } from "../auth/signup";
 
 function SignupForm() {
 	const navigate = useNavigate();
