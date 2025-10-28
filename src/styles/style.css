@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+@theme {
+
+  --color-primary: white;
+  --color-secondary: #0F172A;
+
+  --color-accent: #155DFC;
+
+  --container-main: 1440px;
+  --spacing-main: 1rem;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 1rem;
+
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+@keyframes slideFadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideFadeIn {
+  animation: slideFadeIn 0.3s ease-out;
+}

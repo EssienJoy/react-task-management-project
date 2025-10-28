@@ -1,0 +1,284 @@
+{
+	"users": [
+		{
+			"id": "db07",
+			"userId": 3456,
+			"userName": "Arikpo",
+			"email": "arikpopraise@gmail.com",
+			"password": "1234"
+		},
+		{
+			"id": "e76d",
+			"userId": 7690,
+			"userName": "Riot",
+			"email": "riotken@gmail.com",
+			"password": "3457"
+		},
+		{
+			"id": "ee70",
+			"userId": 5544,
+			"userName": "Jojo",
+			"email": "ejojo@gmail.com",
+			"password": "1234"
+		},
+		{
+			"id": "aa11",
+			"userId": 9876,
+			"userName": "Bella",
+			"email": "bella23@gmail.com",
+			"password": "7890"
+		},
+		{
+			"id": "bb22",
+			"userId": 6723,
+			"userName": "Marcus",
+			"email": "marcus.dev@gmail.com",
+			"password": "1122"
+		},
+		{
+			"id": "cc33",
+			"userId": 8799,
+			"userName": "Zainab",
+			"email": "zainabdesigns@gmail.com",
+			"password": "4433"
+		},
+		{
+			"id": "dd44",
+			"userId": 1212,
+			"userName": "Victor",
+			"email": "victorbuilds@gmail.com",
+			"password": "5566"
+		},
+		{
+			"id": "ee55",
+			"userId": 2233,
+			"userName": "Ada",
+			"email": "adacodes@gmail.com",
+			"password": "7788"
+		},
+		{
+			"id": "ff66",
+			"userId": 3344,
+			"userName": "Kelvin",
+			"email": "kelvinui@gmail.com",
+			"password": "9900"
+		},
+		{
+			"id": "gg77",
+			"userId": 4455,
+			"userName": "Sophia",
+			"email": "sophiadev@gmail.com",
+			"password": "2211"
+		}
+	],
+	"tickets": [
+		{
+			"id": "1",
+			"userId": 3456,
+			"title": "Login button not responding",
+			"description": "The login button on the homepage doesn’t work on mobile.",
+			"status": "open",
+			"createdAt": "2025-10-25T10:32:00Z"
+		},
+		{
+			"id": "2",
+			"userId": 3456,
+			"title": "Email not verified issue",
+			"description": "Users are not receiving verification emails.",
+			"status": "resolved",
+			"createdAt": "2025-10-24T09:15:00Z"
+		},
+		{
+			"id": "3",
+			"userId": 3456,
+			"title": "Dashboard not loading",
+			"description": "Dashboard takes too long to load after login.",
+			"status": "in progress",
+			"createdAt": "2025-10-23T14:22:00Z"
+		},
+		{
+			"id": "4",
+			"userId": 3456,
+			"title": "Ticket deletion issue",
+			"description": "Resolved tickets cannot be deleted.",
+			"status": "resolved",
+			"createdAt": "2025-10-21T08:10:00Z"
+		},
+		{
+			"id": "5",
+			"userId": 3456,
+			"title": "Broken image link",
+			"description": "Image thumbnails fail to load on ticket view.",
+			"status": "open",
+			"createdAt": "2025-10-22T11:00:00Z"
+		},
+		{
+			"id": "6",
+			"userId": 9876,
+			"title": "Form validation bug",
+			"description": "Form allows submission without required fields.",
+			"status": "open",
+			"createdAt": "2025-10-20T12:00:00Z"
+		},
+		{
+			"id": "7",
+			"userId": 9876,
+			"title": "Image upload error",
+			"description": "Large images fail to upload due to server timeout.",
+			"status": "resolved",
+			"createdAt": "2025-10-19T16:45:00Z"
+		},
+		{
+			"id": "8",
+			"userId": 6723,
+			"title": "Payment integration issue",
+			"description": "Stripe payments not updating order status.",
+			"status": "open",
+			"createdAt": "2025-10-19T09:30:00Z"
+		},
+		{
+			"id": "9",
+			"userId": 8799,
+			"title": "Page not found error",
+			"description": "Navigating to /profile throws 404 error.",
+			"status": "resolved",
+			"createdAt": "2025-10-18T13:50:00Z"
+		},
+		{
+			"id": "10",
+			"userId": 1212,
+			"title": "Dark mode not saving",
+			"description": "User preference for dark mode resets after refresh.",
+			"status": "open",
+			"createdAt": "2025-10-17T10:00:00Z"
+		},
+		{
+			"id": "11",
+			"userId": 2233,
+			"title": "Notification delay",
+			"description": "Push notifications are delayed by several minutes.",
+			"status": "open",
+			"createdAt": "2025-10-17T09:10:00Z"
+		},
+		{
+			"id": "12",
+			"userId": 3344,
+			"title": "Forgot password not working",
+			"description": "Reset link email not being sent to users.",
+			"status": "resolved",
+			"createdAt": "2025-10-16T17:00:00Z"
+		},
+		{
+			"id": "13",
+			"userId": 4455,
+			"title": "Slow loading homepage",
+			"description": "Homepage assets take too long to load.",
+			"status": "open",
+			"createdAt": "2025-10-15T14:10:00Z"
+		},
+		{
+			"id": "14",
+			"userId": 3456,
+			"title": "Profile picture not updating",
+			"description": "Users can’t change their profile picture.",
+			"status": "open",
+			"createdAt": "2025-10-14T18:20:00Z"
+		},
+		{
+			"id": "15",
+			"userId": 2233,
+			"title": "Ticket search not accurate",
+			"description": "Searching tickets returns unrelated results.",
+			"status": "resolved",
+			"createdAt": "2025-10-14T12:30:00Z"
+		},
+		{
+			"id": "16",
+			"userId": 8799,
+			"title": "App crash on logout",
+			"description": "App sometimes crashes after user logs out.",
+			"status": "open",
+			"createdAt": "2025-10-13T10:15:00Z"
+		},
+		{
+			"id": "17",
+			"userId": 3344,
+			"title": "User stats incorrect",
+			"description": "Analytics dashboard shows wrong data count.",
+			"status": "resolved",
+			"createdAt": "2025-10-12T09:40:00Z"
+		},
+		{
+			"id": "18",
+			"userId": 5544,
+			"title": "Ticket comment duplication",
+			"description": "Comments get duplicated after page reload.",
+			"status": "open",
+			"createdAt": "2025-10-11T08:55:00Z"
+		},
+		{
+			"id": "19",
+			"userId": 6723,
+			"title": "Sidebar animation lag",
+			"description": "Sidebar transitions are sluggish on Chrome.",
+			"status": "resolved",
+			"createdAt": "2025-10-10T11:25:00Z"
+		},
+		{
+			"id": "20",
+			"userId": 9876,
+			"title": "Pagination not working",
+			"description": "Tickets list doesn’t change when navigating pages.",
+			"status": "open",
+			"createdAt": "2025-10-09T15:35:00Z"
+		},
+		{
+			"id": "21",
+			"userId": 1212,
+			"title": "User session timeout too short",
+			"description": "Users are logged out too quickly due to session timeout.",
+			"status": "open",
+			"createdAt": "2025-10-08T14:00:00Z"
+		},
+		{
+			"id": "22",
+			"userId": 4455,
+			"title": "Ticket sorting incorrect",
+			"description": "Sorting by date doesn’t arrange tickets properly.",
+			"status": "resolved",
+			"createdAt": "2025-10-07T09:45:00Z"
+		},
+		{
+			"id": "23",
+			"userId": 8799,
+			"title": "Profile bio not saving",
+			"description": "Edits to bio are not persisting after reload.",
+			"status": "open",
+			"createdAt": "2025-10-06T10:10:00Z"
+		},
+		{
+			"id": "24",
+			"userId": 2233,
+			"title": "Attachment upload fails",
+			"description": "Unable to attach files larger than 2MB.",
+			"status": "resolved",
+			"createdAt": "2025-10-05T12:10:00Z"
+		},
+		{
+			"id": "25",
+			"userId": 6723,
+			"title": "Filter not resetting",
+			"description": "Applied filters remain active even after reset.",
+			"status": "open",
+			"createdAt": "2025-10-04T15:20:00Z"
+		},
+		{
+			"id": "2003",
+			"title": "Tried A ticket Update",
+			"description": "It worked,yay",
+			"status": "open",
+			"userId": "5544",
+			"date": "2025-10-27T06:52:50.034Z"
+		}
+	]
+}
