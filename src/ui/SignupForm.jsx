@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Input from "../ui/Input";
 import Label from "../ui/Label";
 import toast from "react-hot-toast";
-import { signUpApi } from "../auth/signup";
+import { signUpApi } from "../auth/signUp";
 
 function SignupForm() {
 	const navigate = useNavigate();
