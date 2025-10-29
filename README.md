@@ -1,16 +1,39 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## List of Frame Works Used
 
-Currently, two official plugins are available:
+1) Tailwind Css
+2) Vite
+3) Json server
+4) react
+5) react-router-dom
+6) react hot toast
+7) reacticons
+8) Tanstack react query
+9) react hok form
+10) react-dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## How to Setup the project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Step 1
+Open your vs code termincal or laptop terminal and input git clone https://github.com/EssienJoy/vue-task-management-project.git
 
-## Expanding the ESLint configuration
+## Step 2
+Open the folder in vs code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Step 3 
+use 'npm install' in the terminal to maually install all the project
+
+## Step 4 
+use "npm run dev" to manually create a local host
+
+## Step 5
+use "npm run server" in another terminal to host the local json server
+
+## Reusable Compoents
+the ui folder contains reusable input,button,etc components used all through out the app.
+
+## State Management
+1) Api call data was managed with tanstack react,which also handle the loading,success,error states.
+2) auth global data was handled using context api,that serve as reusable data anywhere in the app.
+3) use state were used to handle ract data that changes over time in small component blocks.
