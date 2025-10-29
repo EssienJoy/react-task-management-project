@@ -37,3 +37,6 @@ the ui folder contains reusable input,button,etc components used all through out
 1) Api call data was managed with tanstack react,which also handle the loading,success,error states.
 2) auth global data was handled using context api,that serve as reusable data anywhere in the app.
 3) use state were used to handle ract data that changes over time in small component blocks.
+
+ ## Accessibility
+isAuthentucated state ismanaged on read only if websites reload or user reload automatically,they would instantly be logged out and have to log back in to start.
