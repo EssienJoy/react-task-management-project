@@ -5,9 +5,10 @@ import { useForm } from "react-hook-form";
 import Input from "../ui/Input";
 import Label from "../ui/Label";
 import toast from "react-hot-toast";
-import { signUpApi } from "../auth/signUp";
+import { generateUserId, signUpApi } from "../auth/signUp";
 
 function SignupForm() {
+	const userId = generateUserId();
 	const navigate = useNavigate();
 
 	const { register, handleSubmit, reset } = useForm();
@@ -39,7 +40,7 @@ function SignupForm() {
 
 		if (email.includes("@") && email.includes(".com")) {
 			signUp(
-				{ userName, email, password, role: "user" },
+				{ userId, userName, email, password, role: "user" },
 				{
 					onSettled: () => reset(),
 				}
