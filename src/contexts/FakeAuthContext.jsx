@@ -65,6 +65,8 @@ function AuthProvider({ children }) {
 		} catch (err) {
 			toast.error("Login failed. Try again later");
 			dispatch({ type: "logout" });
+		} finally {
+			dispatch({ type: "loading" });
 		}
 	}
 
