@@ -13,7 +13,8 @@ const initialState = {
 function reducer(state, action) {
 	switch (action.type) {
 		case "loading":
-			return { ...state, loading: true };
+			return { ...state, loading: action.payload };
+
 		case "login":
 			return { ...state, loading: action.payload, isAuthenticated: true };
 		case "logout":
@@ -43,7 +44,7 @@ function AuthProvider({ children }) {
 		}
 
 		try {
-			dispatch({ type: "loading" });
+			dispatch({ type: "loading", payload: true });
 			const data = await loginApi(email);
 			const userData = data[0];
 
@@ -66,7 +67,7 @@ function AuthProvider({ children }) {
 			toast.error("Login failed. Try again later");
 			dispatch({ type: "logout" });
 		} finally {
-			dispatch({ type: "loading" });
+			dispatch({ type: "loading", payload: false });
 		}
 	}
 
