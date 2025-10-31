@@ -17,6 +17,8 @@ export async function createTicketApi(ticketData) {
 }
 
 export async function deleteTicketApi(ticketId) {
+
+    console.log(ticketId);
     return await fetch(`https://eazy-mart-users-data.onrender.com/tickets/${ticketId}`, {
         method: "DELETE",
     });

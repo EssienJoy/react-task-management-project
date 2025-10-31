@@ -52,6 +52,7 @@ function TicketsForm() {
 		}
 
 		const newTicket = {
+			id: Math.floor(1000 + Math.random() * 9000),
 			title,
 			description,
 			status: "open",
