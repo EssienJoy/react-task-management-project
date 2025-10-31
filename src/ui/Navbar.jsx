@@ -12,7 +12,6 @@ function Navbar() {
 	return (
 		<header className='py-6'>
 			<div className='flex items-center justify-between max-w-[var(--container-main)] mx-auto px-[var(--spacing-main)]'>
-				{/* Logo */}
 				<div className='flex items-center gap-3 font-bold'>
 					<img
 						className='w-7 h-7 object-cover rounded-3xl'
@@ -22,7 +21,6 @@ function Navbar() {
 					<h1>Ticketly</h1>
 				</div>
 
-				{/* Desktop Navigation */}
 				<nav className='hidden md:block'>
 					<ul className='text-md font-bold flex items-center gap-7'>
 						<li>

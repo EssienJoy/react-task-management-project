@@ -6,7 +6,7 @@ function Hero() {
 			<div className='absolute top-1/2 right-1/4 w-2 h-2 bg-pink-400 rounded-full opacity-60'></div>
 			<div className='absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-300 rounded-full opacity-50'></div>
 
-			<div className='max-w-[var(--container-main)] mx-auto px-[var(--spacing-main)] flex-1 flex flex-col gap-4 md:gap-6 items-center justify-center '>
+			<div className='max-w-[var(--container-main)] mx-auto px-[var(--spacing-main)] z-100 flex-1 flex flex-col gap-4 md:gap-6 items-center justify-center '>
 				<h1 className='font-bold text-4xl sm:text-5xl md:text-6xl text-center text-gray-900 leading-tight px-4'>
 					Simplify Ticket Tracking with Ease
 				</h1>
