@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/FakeAuthContext";
 
 function LoginForm() {
 	const { handleSubmit, register } = useForm();
-	const { login } = useAuth();
+	const { login, loading } = useAuth();
 
 	return (
 		<form onSubmit={handleSubmit(login)} className='flex flex-col gap-4'>
@@ -32,7 +32,7 @@ function LoginForm() {
 			<button
 				type='submit'
 				className='w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition'>
-				Login
+				{loading ? "Logging..." : "Login"}
 			</button>
 		</form>
 	);

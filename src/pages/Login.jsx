@@ -17,6 +17,11 @@ function Login() {
 						Sign up
 					</Link>
 				</p>
+
+				<div className='mt-4 text-sm'>
+					<p>email: arikpopraise@gmail.com</p>
+					<p>password: 1234</p>
+				</div>
 			</div>
 		</section>
 	);

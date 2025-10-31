@@ -6,13 +6,16 @@ import { useNavigate } from "react-router-dom";
 const AuthContext = createContext();
 
 const initialState = {
-	isAuthenticated: false,
+	isAuthenticated: !!localStorage.getItem("userId"),
+	loading: false,
 };
 
 function reducer(state, action) {
 	switch (action.type) {
+		case "loading":
+			return { ...state, loading: true };
 		case "login":
-			return { ...state, isAuthenticated: true };
+			return { ...state, loading: action.payload, isAuthenticated: true };
 		case "logout":
 			return { ...state, isAuthenticated: false };
 		default:
@@ -21,7 +24,10 @@ function reducer(state, action) {
 }
 
 function AuthProvider({ children }) {
-	const [{ isAuthenticated }, dispatch] = useReducer(reducer, initialState);
+	const [{ isAuthenticated, loading }, dispatch] = useReducer(
+		reducer,
+		initialState
+	);
 
 	const navigate = useNavigate();
 
@@ -31,26 +37,34 @@ function AuthProvider({ children }) {
 			return;
 		}
 
-		if (email.includes("@") && email.includes(".com")) {
+		if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+			toast.error("Invalid email format.");
+			return;
+		}
+
+		try {
+			dispatch({ type: "loading" });
 			const data = await loginApi(email);
 			const userData = data[0];
 
 			if (!userData) {
 				toast.error("User not found.");
+				dispatch({ type: "logout" });
 				return;
 			}
 
-			if (userData?.password === password) {
+			if (userData.password === password) {
 				dispatch({ type: "login" });
-
 				localStorage.setItem("userId", userData.userId);
 				navigate("/dashboard");
 				toast.success("Welcome Back ✅");
 			} else {
 				toast.error("Incorrect password.");
+				dispatch({ type: "logout" });
 			}
-		} else {
-			toast.error("❌ Incorrect, email must include @ and .com");
+		} catch (err) {
+			toast.error("Login failed. Try again later");
+			dispatch({ type: "logout" });
 		}
 	}
 
@@ -62,7 +76,7 @@ function AuthProvider({ children }) {
 	}
 
 	return (
-		<AuthContext.Provider value={{ login, logout, isAuthenticated }}>
+		<AuthContext.Provider value={{ login, logout, isAuthenticated, loading }}>
 			{children}
 		</AuthContext.Provider>
 	);
